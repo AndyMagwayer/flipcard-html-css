@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(45deg, #061de3, #e306ca);
+    font-family: 'system-ui';
+    color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.container {
+    width: 350px;
+    height: 500px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.card:hover
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+}
+
+.front {
+    background: url(https://20902014.fs1.hubspotusercontent-na1.net/hubfs/20902014/Team%20images/david-kettle-350x500px.jpg);
+}
