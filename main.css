@@ -26,9 +26,13 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
+    transition: transform 1500ms;
 }
 
-.card:hover
+.card:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
 
 .front,
 .back {
