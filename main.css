@@ -20,13 +20,23 @@ body {
 .container {
     width: 350px;
     height: 500px;
+    perspective: 350px;
 }
+
+.container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+
+
 
 .card {
     height: 100%;
     width: 100%;
     position: relative;
     transition: transform 1500ms;
+    transform-style: preserve-3d;
 }
 
 .card:hover {
@@ -41,8 +51,20 @@ body {
     border-radius: 2rem;
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
+    backface-visibility: hidden;
 }
 
 .front {
     background: url(https://20902014.fs1.hubspotusercontent-na1.net/hubfs/20902014/Team%20images/david-kettle-350x500px.jpg);
 }
+
+.back {
+    background-color: #3a3a3a;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
